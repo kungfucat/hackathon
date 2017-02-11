@@ -1,30 +1,31 @@
 <html>
   <head>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
-<script src="js/script.js"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+	<script src="js/script.js"></script>
     <title>MAP</title>
     <link rel = "stylesheet" href="./style.css">
   </head>
   <body>
     <div id="gmap_canvas"></div>
-<div class="actions">
-<div class="button">
-<label for="gmap_where">Where:</label>
-<input id="gmap_where" type="text" name="gmap_where" /></div>
-<div id="button2" class="button" onclick="findAddress(); return false;">Search for address</div>
-<div class="button"> 	
-<label for="gmap_radius">Radius:</label>
-<select id="gmap_radius">
-<option value="500">500</option>
-<option value="1000">1000</option>
-<option value="1500">1500</option>
-<option value="5000">5000</option>
-</select>
-</div>
-<input type="hidden" id="lat" name="lat" value="28.7041" />
-<input type="hidden" id="lng" name="lng" value="77.1025" />
-<div id="button1" class="button" onclick="findPlaces(); return false;">Search for hospitals</div>
-</div>
+	<div class="actions">
+		<div class="button">
+			<label for="gmap_where">Where:</label>
+			<input id="gmap_where" type="text" name="gmap_where" />
+		</div>
+		<div id="button2" class="button" onclick="findAddress(); return false;">Search for address</div>
+		<div class="button"> 	
+			<label for="gmap_radius">Radius:</label>
+			<select id="gmap_radius">
+				<option value="500">500</option>
+				<option value="1000">1000</option>
+				<option value="1500">1500</option>
+				<option value="5000">5000</option>
+			</select>
+		</div>
+		<input type="hidden" id="lat" name="lat" value="28.7041" />
+		<input type="hidden" id="lng" name="lng" value="77.1025" />
+		<div id="button1" class="button" onclick="findPlaces(); return false;">Search for hospitals</div>
+	</div>
   </body>
 </html>
