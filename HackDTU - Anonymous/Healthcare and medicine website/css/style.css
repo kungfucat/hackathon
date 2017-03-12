@@ -10,17 +10,7 @@ body{
 }
 
 /* Global */
-.container{
-  width:80%;
-  margin:auto;
-  overflow:hidden;
-}
 
-.container a{
-  text-decoration: none;
-  color : white;
-  font-size: 130%;
-}
 ul{
   margin:0;
   padding:0;
@@ -66,11 +56,7 @@ header li{
 }
 
 header #branding{
-9  float:left;
-}
-
-header #branding h1{
-  margin:0;
+  float:left;
 }
 
 header nav{
@@ -81,6 +67,14 @@ header nav{
 header .highlight, header .current a{
   color:#e8491d;
   font-weight:bold;
+}
+
+header #branding.highlight{
+  padding-right:100px;
+}
+
+header ul{
+  margin-right: -10px;
 }
 
 header a:hover{
@@ -179,11 +173,15 @@ aside#sidebar .quote input, aside#sidebar .quote textarea{
 }
 
 #npad{
-margin-top : -35px;
+margin-top : -10px;
 margin-right: -20px;
 }
 #npad li{
   margin-left :-15px;
+}
+#npad li a{
+  font-size : 130%;
+  text-decoration: none;
 }
 /* Make it move! */
 @keyframes marquee {
